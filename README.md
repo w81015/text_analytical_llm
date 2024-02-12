@@ -1,32 +1,33 @@
+[中文版 Chinese version](README_zh.md)
 
 # Text Analysis with Large Language Models
 
-利用大型語言模型進行文本分析，主要通過OpenAI的API實現。它讀取`.docx`格式的文件，從中提取文本，並使用OpenAI進行進一步的分析。
+Text analysis with large language models is primarily implemented through OpenAI's API. It reads documents in `.docx` format, extracts the text from them, and uses OpenAI for further analysis.
 
-## 安裝
+## Installation
 
 ```bash
 pip install openai python-dotenv python-docx re csv
 ```
 
-## 設置
+## Setup
 
-1. 將OpenAI API鍵添加到`.env`文件中：
+1. Add your OpenAI API key to a `.env` file:
 ```
-OPENAI_API_KEY=您的API鍵
+OPENAI_API_KEY=your API key
 ```
 
-2. 確保`.docx`格式的文檔作為輸入文件。
+2. Ensure documents in `.docx` format are available as input files.
 
-## 使用方法
+## How to Use
 
-運行`text_analysis.py`，確保文檔路徑已正確設置於程式碼中。
+Run `text_analysis.py`, making sure the document path is correctly set in the code.
 
 ```bash
 python text_analysis.py
 ```
 
-## 功能
+## Features
 
-- **讀取文檔**：從`.docx`文件中提取文本。
-- **文本分析**：使用OpenAI的大型語言模型進行文本分析。
+- **Read Document**: Extracts text from `.docx` files.
+- **Text Analysis**: Performs text analysis using OpenAI's large language models.
